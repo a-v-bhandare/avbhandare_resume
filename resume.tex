@@ -1,0 +1,216 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\input{glyphtounicode}
+\usepackage{color}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+
+\begin{center}
+    \textbf{\Large \scshape Aniket Bhandare } \\ \vspace{5pt}
+    \small+91 9604036906 $|$ \href{mailto:avbhandare.iitd@gmail.com}{\underline{Gmail}} $|$ 
+    \href{https://linkedin.com/in/aditya-kumar-inductor}{\underline{LinkedIn}} $|$
+    
+\end{center}
+
+%-----------EDUCATION-----------
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\section{Education}\vspace{-3mm}
+    \begin{table}[h!]
+      \begin{center}
+        \begin{tabular}{p{0.11\textwidth}p{0.21\textwidth}p{0.54\textwidth}r{0.21\textwidth}} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+          \toprule
+          \textbf{Year} & \textbf{Department} & \textbf{Examination/Degree}& \textbf{Institute }\\ \midrule
+         
+          2019-23 & Mechanical & Btech.in Production and Industrial Engineering & IIT,Delhi\\
+          2019  & Class XII  & MSBSHSE & SCC,Pune\\
+          2017 & Class X    & CBSE   & PIS,Chinchwad \\ \bottomrule
+        \end{tabular}
+      \end{center}
+    \end{table}\vspace{-8mm}
+
+%-----------Relevant Cources-----------
+\section{Relevent Courses}
+ \begin{itemize}[leftmargin=0.15in,rightmargin=-0.05in, label={}]
+    \small{\item{
+     \textbf{Computer Science}{:- Introduction to Computer Science[COL100] , Data Structures and Algorithms*[COL106]} \\ \vspace{4pt}
+     \textbf{Mathematics}{:- Linear Algebra & Differential Equations[MTL101], Calculus[MTL100], Introduction to statistics*[MTL108]} \\ \vspace{4pt}
+     \textbf{Mechanical}{:- Kinematics and Dynamics of Machines[MCL111],Thermal Science[MCL141], Engineering Visualizations[MCP100],Product Realization[MCP101],
+ Material Sciences[APL102], Solid Mechanics[APL104], Mechanical Engineering Drawing[MCL201]*} \\ \vspace{4pt}
+     \textbf{Entrepreneurship}{:- Venture Creation[MSL305], Organization and People Management*[MSL301]} \\ \vspace{4pt}
+     \textbf{Others}{:- Introduction to Economics[HUL211],Macroeconomics[HUL213]* }
+    }}
+ \end{itemize}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Economics Project} \emph{(Prof. Reetika Khera)}}{Dec’20}
+          \resumeItemListStart
+            \resumeItem{Developed a Multiplatform NEWS App in Koltin consuming API from NEWS API}
+            \resumeItem{Implemented using MVVM with Clean Architecture}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Search Algorithm} \emph{(Web Development |Python)}}{Dec’20}
+          \resumeItemListStart
+            \resumeItem{Developed a Multiplatform NEWS App in Koltin consuming API from NEWS API}
+            \resumeItem{Implemented using MVVM with Clean Architecture}
+          \resumeItemListEnd
+     \resumeProjectHeading
+          {\textbf{Built a Table-cum-Shelf }  \emph{(Prof-PV Rao)}}{Octo.-Nov.’19}
+          \resumeItemListStart
+            \resumeItem{Developed an All-in-One Meditation app using Flutter Framework during Smart India Hackathon 2020}
+            \resumeItem{Implemented Pose Estimation Algorithm for Yoga Poses using TensorFlow}
+            \resumeItem{Integrated Tensorflow and Flutter to predict Yoga Pose with 90+\% accuracy}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Designed a Glider in a workshop by Skyfifi Labs }  \emph{(Prof-PV Madhusudhan Rao)}}{Octo.’19}
+          
+      \resumeProjectHeading
+          {\textbf{Temperature controlled DC Fan} \emph{(Prof.Electrical)}}{Aug.'20}
+          
+     
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{(Python, Java, JavaScript, HTML/CSS)}
+     \textbf{Frameworks}{(Django, Vue.js, BootStrap)}
+     \textbf{Developer Tools}{(Excel, Inventor, Solidworks, Git, VS Code, PyCharm)}
+     \textbf{Other}{(MongoDB, Excel, Adobe Illustrator, Flutter , Latex)}
+    }}
+ \end{itemize}
+
+%-----------POR-----------
+\section{Positions of Responsibilities }
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FACC Representative }{Sept. 2020 -- Present}
+      {Satpura, IIT Delhi}{New Delhi, IN}
+      \resumeItemListStart
+        \resumeItem{Successfully executed Inter-Hostel and Pan-IIT Competitions.}
+        \resumeItem{Explored art forms like Charcoal Painting and Digital Art work }
+      \resumeItemListEnd
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+%-----------Extra-Curricular-----------
+\section{Extra Curricular Activities}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Azure Society}{(art enthusiast)}
+     \textbf{Street Play}{(Inter-Hostel Competition )}
+     \textbf{Hockey}{(Inter-Hostel level)}
+     \textbf{Other}{()}
+    }}
+ \end{itemize}
+  
+
+%-------------------------------------------
+  
+  
+\end{document}
