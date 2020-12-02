@@ -1,3 +1,9 @@
+%-------------------------
+% Resume in Latex
+% Author : Aniket Bhandare
+% Github: https://github.com/a-v-bhandare
+%------------------------
+
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -13,7 +19,9 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \input{glyphtounicode}
-\usepackage{color}
+\usepackage{xcolor}
+
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -47,15 +55,25 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\textcolor{mygray}
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Sections formatting
+\titleformat{\section}{\Large\bfseries\rlap{\color{gray!50}\rule[-0.3ex]{\linewidth}{2.8ex}\vspace{-3.1ex}}\Large\bfseries\color{black}}{\parbox{3cm}{\thesection}}{1pt}{}[ \vspace{-5pt}]
+
+\titlespacing* % starred version: first paragraph is not indented
+    {\section} % <command>
+    {1em} % <left>
+    {3.5ex plus 1ex minus .2ex} % <before-sep>
+    {2.3ex plus .2ex} % <after-sep>
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
+
+\newcommand{\colorsection}[1]{%
+  \colorbox{blue!20}{\parbox{\dimexpr\textwidth-2\fboxsep}{\thesection\ #1}}}
+
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -102,20 +120,17 @@
 
 
 \begin{center}
-    \textbf{\Large \scshape Aniket Bhandare } \\ \vspace{5pt}
-    \small+91 9604036906 $|$ \href{mailto:avbhandare.iitd@gmail.com}{\underline{Gmail}} $|$ 
-    \href{https://linkedin.com/in/aditya-kumar-inductor}{\underline{LinkedIn}} $|$
+    \textbf{\huge \scshape Aniket Bhandare } \\ \vspace{5pt}
+    \small+91 9604036906 $|$ \href{mailto:avbhandare.iitd@gmail.com}{\underline{avbhandare.iitd@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/aditya-kumar-inductor}{\underline{LinkedIn}} 
     
 \end{center}
-
-\definecolor{mygray}{gray}{0.6}
 
 %-----------EDUCATION-----------
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\section{Education}\vspace{-3mm}
-
+\section*{Education}\vspace{-3mm}
     \begin{table}[h!]
       \begin{center}
         \begin{tabular}{p{0.11\textwidth}p{0.21\textwidth}p{0.54\textwidth}r{0.21\textwidth}} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
@@ -130,7 +145,7 @@
     \end{table}\vspace{-8mm}
 
 %-----------Relevant Cources-----------
-\section{Relevent Courses}
+\section*{Relevent Courses}
  \begin{itemize}[leftmargin=0.15in,rightmargin=-0.05in, label={}]
     \small{\item{
      \textbf{Computer Science}{:- Introduction to Computer Science[COL100] , Data Structures and Algorithms*[COL106]} \\ \vspace{4pt}
@@ -142,10 +157,10 @@
     }}
  \end{itemize}
 %-----------PROJECTS-----------
-\section{Projects}
+\section*{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Economics Project} \emph{(Prof. Reetika Khera)}}{Dec’20}
+          {\textbf{} \emph{(Prof. Reetika Khera)}}{Dec’20}
           \resumeItemListStart
             \resumeItem{Developed a Multiplatform NEWS App in Koltin consuming API from NEWS API}
             \resumeItem{Implemented using MVVM with Clean Architecture}
@@ -174,7 +189,7 @@
 
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+\section*{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{(Python, Java, JavaScript, HTML/CSS)}
@@ -185,7 +200,7 @@
  \end{itemize}
 
 %-----------POR-----------
-\section{Positions of Responsibilities }
+\section*{Positions of Responsibilities }
   \resumeSubHeadingListStart
 
     \resumeSubheading
@@ -201,7 +216,7 @@
 
 %-------------------------------------------
 %-----------Extra-Curricular-----------
-\section{Extra Curricular Activities}
+\section*{Extra Curricular Activities}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Azure Society}{(art enthusiast)}
