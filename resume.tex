@@ -1,3 +1,9 @@
+%-------------------------
+% Resume in Latex
+% Author : Aditya K.
+% Github: https://github.com/inductor69
+% License : MIT
+%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -14,7 +20,9 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \input{glyphtounicode}
-\usepackage{color}
+\usepackage{xcolor}
+
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -48,15 +56,22 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Sections formatting
+\titleformat{\section}{\Large\bfseries\rlap{\color{gray!50}\rule[-0.3ex]{\linewidth}{2.8ex}\vspace{-3.1ex}}\Large\bfseries\color{black!90}}{\parbox{3cm}{\thesection}}{1pt}{}[ \vspace{-5pt}]
+
+\titlespacing* % starred version: first paragraph is not indented
+    {\section} % <command>
+    {1em} % <left>
+    {3.5ex plus 1ex minus .2ex} % <before-sep>
+    {2.3ex plus .2ex} % <after-sep>
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
+
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -103,9 +118,9 @@
 
 
 \begin{center}
-    \textbf{\Large \scshape Aniket Bhandare } \\ \vspace{5pt}
-    \small+91 9604036906 $|$ \href{mailto:avbhandare.iitd@gmail.com}{\underline{Gmail}} $|$ 
-    \href{https://linkedin.com/in/aditya-kumar-inductor}{\underline{LinkedIn}} $|$
+    \textbf{\huge \scshape Aniket Bhandare } \\ \vspace{5pt}
+    \small+91 9604036906 $|$ \href{mailto:avbhandare.iitd@gmail.com}{\underline{avbhandare.iitd@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/aditya-kumar-inductor}{\underline{LinkedIn}} 
     
 \end{center}
 
@@ -113,7 +128,7 @@
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\section{Education}\vspace{-3mm}
+\section*{Education}\vspace{-3mm}
     \begin{table}[h!]
       \begin{center}
         \begin{tabular}{p{0.11\textwidth}p{0.21\textwidth}p{0.54\textwidth}r{0.21\textwidth}} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
@@ -128,7 +143,7 @@
     \end{table}\vspace{-8mm}
 
 %-----------Relevant Cources-----------
-\section{Relevent Courses}
+\section*{Relevent Courses}
  \begin{itemize}[leftmargin=0.15in,rightmargin=-0.05in, label={}]
     \small{\item{
      \textbf{Computer Science}{:- Introduction to Computer Science[COL100] , Data Structures and Algorithms*[COL106]} \\ \vspace{4pt}
@@ -140,39 +155,46 @@
     }}
  \end{itemize}
 %-----------PROJECTS-----------
-\section{Projects}
+\section*{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Economics Project} \emph{(Prof. Reetika Khera)}}{Dec’20}
+          {\textbf{Demonetization and Its Impact on Indian Economy} \emph{(Prof. Reetika Khera)}}{Dec’20}
           \resumeItemListStart
-            \resumeItem{Developed a Multiplatform NEWS App in Koltin consuming API from NEWS API}
-            \resumeItem{Implemented using MVVM with Clean Architecture}
+            \resumeItem{Understanding role of cash and currency in an economy,general equilibrium effects,and opportunity cost}
+            \resumeItem{Evaluating the demonetization exercise and whether the exercise achieved its stated objectives. }
           \resumeItemListEnd
     \resumeProjectHeading
-          {\textbf{Search Algorithm} \emph{(Web Development |Python)}}{Dec’20}
+          {\textbf{Messenger Website} \emph{(Web Development |Python)}}{Dec’20}
           \resumeItemListStart
-            \resumeItem{Developed a Multiplatform NEWS App in Koltin consuming API from NEWS API}
-            \resumeItem{Implemented using MVVM with Clean Architecture}
+            \resumeItem{Developed a social messenger with help of Django Framework }
+            \resumeItem{Key features are Groups, Multiple users and authorization, Text Posts and linking profiles with '@' symbol}
           \resumeItemListEnd
      \resumeProjectHeading
-          {\textbf{Built a Table-cum-Shelf }  \emph{(Prof-PV Rao)}}{Octo.-Nov.’19}
+          {\textbf{Built a Table-cum-Shelf }  \emph{(Prof-PV Rao)}}{Nov.’19}
           \resumeItemListStart
-            \resumeItem{Developed an All-in-One Meditation app using Flutter Framework during Smart India Hackathon 2020}
-            \resumeItem{Implemented Pose Estimation Algorithm for Yoga Poses using TensorFlow}
-            \resumeItem{Integrated Tensorflow and Flutter to predict Yoga Pose with 90+\% accuracy}
+            
+            \resumeItem{The project involved Analyzing the raw materials required, using machine workshop, carpentry, Welding, sheet metal workshop to make the model.}
+            \resumeItem{Main reason for this project was problem faced by consumers of less space for furniture in metro city houses. }
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Designed a Glider in a workshop by Skyfifi Labs }  \emph{(Prof-PV Madhusudhan Rao)}}{Octo.’19}
-          
+          \resumeItemListStart
+            \resumeItem{The project involved Analyzing the longitudinal stability of the design.}
+            \resumeItem{ Ensuring proper weight and shape of fuselage.Wing design and size for improving glide ratio.}
+            
+          \resumeItemListEnd
+
       \resumeProjectHeading
           {\textbf{Temperature controlled DC Fan} \emph{(Prof.Electrical)}}{Aug.'20}
+          
+          
           
      
     \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+\section*{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{(Python, Java, JavaScript, HTML/CSS)}
@@ -183,15 +205,15 @@
  \end{itemize}
 
 %-----------POR-----------
-\section{Positions of Responsibilities }
+\section*{Positions of Responsibilities }
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {FACC Representative }{Sept. 2020 -- Present}
       {Satpura, IIT Delhi}{New Delhi, IN}
       \resumeItemListStart
-        \resumeItem{Successfully executed Inter-Hostel and Pan-IIT Competitions.}
-        \resumeItem{Explored art forms like Charcoal Painting and Digital Art work }
+        \resumeItem{Successfully conducted Inter-Hostel and Pan-IIT Competitions.}
+        \resumeItem{Explored different art forms like Wall Painting, Charcoal Painting and Digital Art Work.}
       \resumeItemListEnd
     \resumeItemListEnd
 
@@ -199,13 +221,14 @@
 
 %-------------------------------------------
 %-----------Extra-Curricular-----------
-\section{Extra Curricular Activities}
+\section*{Extra Curricular Activities}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
+     
      \textbf{Azure Society}{(art enthusiast)}
      \textbf{Street Play}{(Inter-Hostel Competition )}
      \textbf{Hockey}{(Inter-Hostel level)}
-     \textbf{Other}{()}
+     
     }}
  \end{itemize}
   
